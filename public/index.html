@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>InterView Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="hd">
+         
+        <h1 style="text-align: center; color:royalblue; font-family:Verdana, Geneva, Tahoma, sans-serif"><b>Schedule Your Interview</b></h1>
+
+    </div>
+    
+
+    <div class="fm">
+      <form action = "/api/create" method = "POST">
+       
+        <div class="form-group">
+            <label for="exampleFormControlInput1"><b>User ID</b>&nbsp;&nbsp;</label>
+            <input type="number" name="id" class="form-controlid">
+        </div>
+       
+        <div class="form-group">
+            <label for="name"><b>Name</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+            <input type = "text" name = "name" placeholder="Anurag">
+             
+        </div>
+
+        <div class="form-group">
+            <label for="startTime"> <b>Start Time </b>&nbsp;&nbsp;&nbsp;</label>
+            <input type = "time" name = "startTime">
+        </div>
+
+        <div class="form-group">
+            <label for="endTime"> <b>End Time</b> &nbsp;&nbsp;&nbsp;</label>
+            <input type = "time" name = "endTime" style="margin: 8px 0px 0px -3px;">
+        </div>
+
+        <br><br>
+
+        <div class="cr">
+            <label for="Create Interview"></label>
+            <input name = "btn" type = "submit" class="c">
+            <input name="reset" type="reset">
+        </div>
+
+        <p></p>
+      </form>
+    </div>
+     
+
+
+    <form action = "/api/display">
+
+        <div class="si">
+            <p> </p>
+            <p> </p>
+            <label for="submit" style="font-size: large"> <b>Show Interview's:</b></label><br>
+            <input name = "btn" class = "btn" type = "submit" style="background-color: brown;">
+        </div>
+
+    </form>
+
+    <form action = "edit.html">
+        <p> </p>
+        <p> </p>
+        <div>
+            <label for="submit" style="font-size: large"><b>Edit Interview's: </b></label><br>
+            <input name = "btn1" class = "btn1" type = "submit" style="background-color: brown;">
+        </div>
+
+    </form>
+    <marquee  direction="right" style="color:Black; font-size: 200%; font-family: 'Times New Roman', Times, serif;">All The Best Everyone!</marquee>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!--  This form can be used for taking feedbacks and suggestions also it can be used to -->
+<!-- show a print of the entries of the user and assign them the required vehicle -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Accepted</title>
+
+    <style>
+        input[type=text],
+        select {
+            width: 30%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> <%= message %> </h1>
+        <br>
+    
+        <label>Your suggestions and feedbacks are welcome</label>
+        <div class="feedback">
+            <form class="acceptedForm">
+                <input type="text" name="feedback">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

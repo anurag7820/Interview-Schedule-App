@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title> List of Interviews </title>
+
+    </head>
+    <body>
+
+        <div><h1>Details</h1></div>
+
+        <ul class="todo-list">
+
+            <% table.forEach(itr => { %>
+
+            <li class="todo-list-item">
+
+            <div>   
+                <table>             
+                    <th>   
+                    <%= itr.name%> 
+
+                    <%= itr.id%> 
+
+                    <%= itr.startTime%> 
+
+                    <%= itr.endTime%> 
+                    </th>
+                </table>
+            </div>
+            <p></p>
+
+
+            </li>
+
+            <% }) %>
+
+        </ul>
+
+    </body>
+</html>
