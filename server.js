@@ -16,4 +16,4 @@ app.use(express.urlencoded({extended: true}));
 // Routes --->
 app.use('/api', require('./Routes/Api').route);
 
-app.listen('8000', () => console.log("Server started at http://localhost:8000"));
+app.listen('10000', () => console.log("Server started at http://localhost:10000"));
