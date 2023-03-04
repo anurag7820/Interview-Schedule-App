@@ -12,9 +12,7 @@ async function validate (start, end, id, name) {
     arr=await Table.find({});
     
    console.log(arr);
-    if (arr.length <= 2) {
-        return false;
-    }
+     
     
     for (let i = 0; i < arr.length; i++) {
 
