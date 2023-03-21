@@ -17,7 +17,7 @@ async function validate (start, end, id, name) {
     for (let i = 0; i < arr.length; i++) {
 
         // If the current person is involved in any other interview at that time
-        if (id === arr[i].id && name === arr[i].name) {
+        
 
             if (arr[i].startTime === "00:00") arr[i].startTime = "24:00";
             
@@ -27,7 +27,7 @@ async function validate (start, end, id, name) {
                 console.log("NO");
                 return false;
             }
-        }
+        
     }
     console.log("YES");
     return true;
