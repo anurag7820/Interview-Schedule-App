@@ -41,7 +41,7 @@ async function validate (start, end, id, name) {
 
      let check = await validate(startTime, endTime, id, name);   // Remember We didnt put await here and so it was messing up earlier
                                                                 // because code below this line was executing before execution of this
-
+    check=false;
     if (check === false) {
         res.render('failure', {
             message: `Sorry ${name} is already enrolled in an interview at that time, Please pick some different other Slot!`
