@@ -16,14 +16,10 @@ async function validate (start, end, id, name) {
     
     for (let i = 0; i < arr.length; i++) {
 
-        // If the current person is involved in any other interview at that time
-        
+        // If slot is unavailable
+       
 
-            if (arr[i].startTime === "00:00") arr[i].startTime = "24:00";
-            
-            if (arr[i].endTime === "00:00") arr[i].endTime = "24:00";
-
-            if ((arr[i].endTime >= start && end >= arr[i].endTime)  || ( arr[i].startTime <= end && start <= arr[i].startTime)) {
+            if ((start>=arr[i].startTime && start<=arr[i].endTime)  || (end>=arr[i].startTime &&  end <= arr[i].endTime)) {
                 console.log("NO");
                 return false;
             }
