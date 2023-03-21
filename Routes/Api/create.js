@@ -42,7 +42,7 @@ async function validate (start, end, id, name) {
     
     if (check === false) {
         res.render('failure', {
-            message: `Sorry ${name} is already enrolled in an interview at that time, Please pick some different other Slot!`
+            message: `Sorry ${name}, someone is already enrolled in an interview at that time, Please pick some different other Slot!`
         });
         return;
     }
