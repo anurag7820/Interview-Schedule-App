@@ -10,15 +10,4 @@
 2. An interview list page where the admin can see all the upcoming interviews.  -- GET Request
 
 3. An interview edit page where the admin can edit the created interview with the same validations as on the creation page. -- PUT Request
-# Interview-Portal
-# Interview-Portal
-# Interview-Portal
-# Interview-Portal
-# Interview-Portal
-# Interview-Portal
-# Interview_Portal
-# Interview_Portal
-# Interview_Portal
-# Interview-Schedule-App
-# Interview-Schedule-App
 # Interview-Schedule-App
